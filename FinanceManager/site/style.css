@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /*шрифт для всей страницы, дочерние элементы его наследуют*/
+    background-color: mediumseagreen; /*цвет фона страницы*/
+}
+
+#bodyTitle{
+    background-color: mediumspringgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    text-align: center;
+    padding: 5px 5px;
+    min-width: 0;
+}
+
+#sections{
+    display: flex; /*дочерние секции встают в строчку*/
+    gap: 20px; /*расстояние между секциями*/
+    max-width: 900px; /*общая ширина ряда*/
+    margin: 0 auto; /*ряд по центру страницы*/
+}
+
+#sectionBalance{
+    background-color: mediumspringgreen; /*цвет фона (заливка) внутри блока*/
+    border-style: solid; /*тип линии рамки: сплошная*/
+    border-color: black; /*цвет рамки*/
+    border-width: 2px; /*толщина рамки*/
+    flex: 1; /*равная доля ширины ряда — все три секции одинаковые*/
+    min-width: 0; /*разрешает сжиматься, чтобы блок не вылезал за ряд*/
+    overflow-wrap: break-word; /*длинное число переносится на новую строку, а не ломает ряд*/
+    text-align: left; /*текст по центру внутри блока*/
+    padding: 10px 5px; /*отступ внутри от рамки до текста: 5px сверху/снизу, 5px по бокам*/
+}
+
+#sectionIncome{
+    background-color: mediumspringgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+#sectionConsumption{
+    background-color: mediumspringgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-align: left;
+    padding: 10px 5px;
+}
